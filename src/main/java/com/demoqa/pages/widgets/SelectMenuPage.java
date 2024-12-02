@@ -3,8 +3,9 @@ package com.demoqa.pages.widgets;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
 
-import static utilities.DropDownUtility.selectByIndex;
-import static utilities.DropDownUtility.selectByVisibleText;
+import java.util.List;
+
+import static utilities.DropDownUtility.*;
 import static utilities.JavaScriptUtility.scrollToElementJS;
 
 public class SelectMenuPage extends WidgetsPage{
@@ -25,5 +26,17 @@ public class SelectMenuPage extends WidgetsPage{
 //        select.selectByVisibleText(text);
 
         selectByIndex(standardMultiSelect, index);
+    }
+
+    public void deselectStandardMulti(String value){
+        scrollToElementJS(standardMultiSelect);
+//        Select select = new Select(find(standardMultiSelect));
+//        select.selectByVisibleText(text);
+
+        deselectByValue(standardMultiSelect, value);
+    }
+
+    public List<String> getAllSelectedMultiOptions(){
+        return getAllSelectedOptions(standardMultiSelect);
     }
 }
