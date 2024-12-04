@@ -21,6 +21,7 @@ public class DateTest extends BaseTest {
 
         String actualDate = datePickerPage.getDate();
         String expectedDate = monthNumber + "/" + day + "/" + year;
+        System.out.println(expectedDate);
         Assert.assertEquals(actualDate, expectedDate, "\n Actual & Expected date don't match" +
                                                                "\n Actual Date: " + actualDate +
                                                                "\n Expected Date: " + expectedDate);
