@@ -335,25 +335,6 @@ Key dependencies in your `pom.xml`:
 </dependency>
 ```
 
-## 📝 Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is open source and available for educational and professional use.
-
-## 📧 Contact
-
-For questions or suggestions, please reach out to:
-- GitHub: [@AshfatAbegh](https://github.com/AshfatAbegh)
-
 ## 🔗 Resources
 
 - [Selenium Documentation](https://www.selenium.dev/documentation/)
